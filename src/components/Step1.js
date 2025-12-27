@@ -1,0 +1,30 @@
+import React from 'react';
+
+export default function Step1({ handleNextStep, handleFormData, formData }) {
+  const handleSubmit = () => {
+    handleNextStep();
+  };
+
+  return (
+    <form>
+      <input
+        id="first_name"
+        type="text"
+        value={formData.firstName}
+        onChange={(e) => handleFormData('firstName', e.target.value)}
+      />
+      <input
+        id="last_name"
+        type="text"
+        value={formData.lastName}
+        onChange={(e) => handleFormData('lastName', e.target.value)}
+      />
+      <button
+        type="button"
+        onClick={handleSubmit}
+      >
+        Next
+      </button>
+    </form>
+  );
+}
