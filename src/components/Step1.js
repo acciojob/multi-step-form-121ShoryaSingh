@@ -19,9 +19,9 @@ export default function Step1({ handleNextStep, handleFormData, formData }) {
         value={formData.lastName}
         onChange={(e) => handleFormData('lastName', e.target.value)}
       />
+      <div id="step2"></div>
       <div id="step3"></div>
       <button
-        id="step2"
         type="button"
         onClick={handleSubmit}
       >
