@@ -30,7 +30,7 @@ export default function Step({
 
           <button
             type="button"
-            onClick={handleSubmit}
+            onClick={handleNextStep()}
           >
             Next
           </button>
