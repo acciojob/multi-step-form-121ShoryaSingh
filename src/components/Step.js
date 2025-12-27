@@ -91,7 +91,7 @@ export default function Step({
           >
             Previous
           </button>
-          <button>Submit</button>
+          <button type="button">Submit</button>
         </div>
       )}
     </>
