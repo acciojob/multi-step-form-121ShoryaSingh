@@ -6,7 +6,7 @@ export default function Step1({ handleNextStep, handleFormData, formData }) {
   };
 
   return (
-    <div>
+    <div id="step1">
       <input
         id="first_name"
         type="text"
@@ -19,7 +19,9 @@ export default function Step1({ handleNextStep, handleFormData, formData }) {
         value={formData.lastName}
         onChange={(e) => handleFormData('lastName', e.target.value)}
       />
+      <div id="step3"></div>
       <button
+        id="step2"
         type="button"
         onClick={handleSubmit}
       >
