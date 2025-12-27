@@ -28,7 +28,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <form>
       {currentStep === 1 && (
         <Step1
           handleNextStep={handleNextStep}
@@ -52,7 +52,7 @@ const App = () => {
           formData={formData}
         />
       )}
-    </div>
+    </form>
   );
 };
 

@@ -7,7 +7,7 @@ export default function Step3({
   handlePreviousStep,
 }) {
   return (
-    <form id="step3">
+    <div id="step3">
       <input
         id="card_info"
         type="text"
@@ -29,6 +29,6 @@ export default function Step3({
         Previous
       </button>
       <button>Submit</button>
-    </form>
+    </div>
   );
 }

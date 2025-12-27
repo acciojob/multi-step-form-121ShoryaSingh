@@ -6,7 +6,7 @@ export default function Step1({ handleNextStep, handleFormData, formData }) {
   };
 
   return (
-    <form id="step1">
+    <div id="step1">
       <input
         id="first_name"
         type="text"
@@ -25,6 +25,6 @@ export default function Step1({ handleNextStep, handleFormData, formData }) {
       >
         Next
       </button>
-    </form>
+    </div>
   );
 }
