@@ -6,6 +6,7 @@ export default function Step({
   formData,
   handlePreviousStep,
   currentStep,
+  handleSubmit,
 }) {
   return (
     <form onSubmit={handleSubmit}>
