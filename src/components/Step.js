@@ -7,10 +7,6 @@ export default function Step({
   handlePreviousStep,
   currentStep,
 }) {
-  const handleSubmit = () => {
-    handleNextStep();
-  };
-
   return (
     <>
       {currentStep === 1 && (
@@ -30,7 +26,9 @@ export default function Step({
 
           <button
             type="button"
-            onClick={handleNextStep()}
+            onClick={() => {
+              handleNextStep();
+            }}
           >
             Next
           </button>
