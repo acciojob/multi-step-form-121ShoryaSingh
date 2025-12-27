@@ -8,7 +8,7 @@ export default function Step({
   currentStep,
 }) {
   return (
-    <>
+    <form onSubmit={handleSubmit}>
       {currentStep === 1 && (
         <div id="step1">
           <input
@@ -92,6 +92,6 @@ export default function Step({
           <button type="submit">Submit</button>
         </div>
       )}
-    </>
+    </form>
   );
 }

@@ -31,16 +31,16 @@ const App = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div id="main">
       <Step
-        id="step1"
         handleNextStep={handleNextStep}
         handleFormData={handleFormData}
         formData={formData}
         currentStep={currentStep}
         handlePreviousStep={handlePreviousStep}
+        handleSubmit={handleSubmit}
       />
-    </form>
+    </div>
   );
 };
 
