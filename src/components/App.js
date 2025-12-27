@@ -31,6 +31,7 @@ const App = () => {
     <form>
       {currentStep === 1 && (
         <Step1
+          id="step1"
           handleNextStep={handleNextStep}
           handleFormData={handleFormData}
           formData={formData}
@@ -38,6 +39,7 @@ const App = () => {
       )}
       {currentStep === 2 && (
         <Step2
+          id="step2"
           handleNextStep={handleNextStep}
           handleFormData={handleFormData}
           handlePreviousStep={handlePreviousStep}
@@ -46,6 +48,7 @@ const App = () => {
       )}
       {currentStep === 3 && (
         <Step3
+          id="step3"
           handleNextStep={handleNextStep}
           handleFormData={handleFormData}
           handlePreviousStep={handlePreviousStep}

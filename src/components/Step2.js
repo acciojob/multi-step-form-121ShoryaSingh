@@ -7,7 +7,7 @@ export default function Step2({
   handlePreviousStep,
 }) {
   return (
-    <div id="step2">
+    <div>
       <input
         id="model"
         type="text"
