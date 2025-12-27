@@ -7,7 +7,7 @@ export default function Step3({
   handlePreviousStep,
 }) {
   return (
-    <form>
+    <form id="step3">
       <input
         id="card_info"
         type="text"
