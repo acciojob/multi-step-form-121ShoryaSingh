@@ -45,7 +45,7 @@ export default function Step({
             onChange={(e) => handleFormData('carModel', e.target.value)}
           />
           <input
-            id="car_pricee"
+            id="car_price"
             type="text"
             value={formData.carPrice}
             onChange={(e) => handleFormData('carPrice', e.target.value)}
@@ -91,7 +91,7 @@ export default function Step({
           >
             Previous
           </button>
-          <button type="button">Submit</button>
+          <button type="submit">Submit</button>
         </div>
       )}
     </>

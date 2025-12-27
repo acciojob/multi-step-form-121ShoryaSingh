@@ -25,8 +25,13 @@ const App = () => {
     setCurrentStep((prev) => prev - 1);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <Step
         id="step1"
         handleNextStep={handleNextStep}
