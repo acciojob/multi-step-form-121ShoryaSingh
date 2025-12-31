@@ -10,7 +10,7 @@ export default function Step({
 }) {
   return (
     <form onSubmit={handleSubmit}>
-         <div style={{display: currentStep === 1 ? 'block' : 'none'}}>
+         <div id='step1' style={{display: currentStep === 1 ? 'block' : 'none'}}>
           <input
             id="first_name"
             type="text"
