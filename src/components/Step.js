@@ -10,8 +10,7 @@ export default function Step({
 }) {
   return (
     <form onSubmit={handleSubmit}>
-      {currentStep === 1 && (
-        <div id="step1">
+         <div style={{display: currentStep === 1 ? 'block' : 'none'}}>
           <input
             id="first_name"
             type="text"
@@ -34,9 +33,7 @@ export default function Step({
             Next
           </button>
         </div>
-      )}
-      {currentStep === 2 && (
-        <div id="step2">
+        <div id="step2" style={{display: currentStep === 2 ? 'block' : 'none'}}>
           <input
             id="model"
             type="text"
@@ -66,10 +63,8 @@ export default function Step({
             Next
           </button>
         </div>
-      )}
 
-      {currentStep === 3 && (
-        <div id="step3">
+        <div id="step3" style={{display: currentStep === 3 ? 'block' : 'none'}}>
           <input
             id="card_info"
             type="text"
@@ -92,7 +87,6 @@ export default function Step({
           </button>
           <button type="submit">Submit</button>
         </div>
-      )}
     </form>
   );
 }
